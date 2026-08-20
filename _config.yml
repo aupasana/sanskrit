@@ -1,0 +1,12 @@
+title: "Sanskrit Lessons"
+description: "A small series of Sanskrit lessons with videos and exercises."
+# For a project page at https://aupasana.github.io/sanskrit
+baseurl: "/sanskrit"
+url: "https://aupasana.github.io"
+port: 4004
+collections:
+  lessons:
+    output: true
+markdown: kramdown
+theme: null
+plugins: []

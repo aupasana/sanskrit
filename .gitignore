@@ -1,0 +1,33 @@
+# Jekyll build output
+_site/
+
+# Jekyll cache & metadata
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler / Ruby
+.bundle/
+vendor/bundle/
+*.gem
+pkg/
+
+# Ignore logs and tempfiles
+log/
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node
+node_modules/
+
+# Environment
+.env
