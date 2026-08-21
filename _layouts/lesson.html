@@ -5,9 +5,7 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   {% if page.youtube_id %}
-  <div class="ratio ratio-16x9 mb-3">
-    <iframe src="https://www.youtube.com/embed/{{ page.youtube_id }}" title="{{ page.title }}" allowfullscreen></iframe>
-  </div>
+  <p class="mb-3">{% include youtube_link.html youtube_id=page.youtube_id title=page.title start=page.youtube_start %}</p>
   {% endif %}
 
   {{ content }}

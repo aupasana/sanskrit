@@ -1,0 +1,42 @@
+{% comment %} Include: youtube_link.html
+   Params:
+     - youtube_id: ID of the video
+     - title: video title for link text
+     - start: optional start time string (SS, M:SS, or H:MM:SS)
+{% endcomment %}
+
+{% if include.youtube_id %}
+  {% assign url = "https://www.youtube.com/watch?v=" | append: include.youtube_id %}
+
+  {% if include.start %}
+    {% assign parts = include.start | split: ':' %}
+    {% if parts.size == 3 %}
+      {% assign hours = parts[0] | plus: 0 %}
+      {% assign minutes = parts[1] | plus: 0 %}
+      {% assign seconds = parts[2] | plus: 0 %}
+      {% assign total_seconds = hours | times: 3600 %}
+      {% assign tmp = minutes | times: 60 %}
+      {% assign total_seconds = total_seconds | plus: tmp %}
+      {% assign total_seconds = total_seconds | plus: seconds %}
+    {% elsif parts.size == 2 %}
+      {% assign minutes = parts[0] | plus: 0 %}
+      {% assign seconds = parts[1] | plus: 0 %}
+      {% assign total_seconds = minutes | times: 60 %}
+      {% assign total_seconds = total_seconds | plus: seconds %}
+    {% else %}
+      {% assign total_seconds = parts[0] | plus: 0 %}
+    {% endif %}
+
+    {% if total_seconds %}
+      {% assign url = url | append: "&t=" | append: total_seconds %}
+    {% endif %}
+  {% endif %}
+
+  Watch <a href="{{ url }}" target="_blank" rel="noopener">lesson</a>
+  {% if include.start %}
+    from {{ include.start }}
+  {% endif %}
+  {% if include.end %}
+    until {{ include.end }}
+  {% endif %}
+{% endif %}
