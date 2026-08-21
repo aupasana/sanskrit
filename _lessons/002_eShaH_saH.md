@@ -1,6 +1,6 @@
 ---
 number: 2
-title: eṣaḥ saḥ, eṣā sā, etat tat
+title: एषः एषा एतत् / सः सा तत्
 layout: lesson
 youtube_id: "AIyzIR1efH4"
 youtube_start: "8:34"

@@ -3,6 +3,11 @@ title: Home
 layout: default
 ---
 
+<section class="mb-5">
+The Sanskrit learning path below references Samskrita Bharati classes, <br/>
+which aired on Doordarshan a few decades back. <br/>
+They are split up into small self-contained units.
+</section>
 
 {% for lesson in site.lessons reversed %}
 <section class="mb-5" id="{{ lesson.slug | default: lesson.title | slugify }}">
@@ -41,5 +46,6 @@ layout: default
 <h2>Resources</h2>
 <ul>
     <li><a href="https://archive.org/details/abhaysapustakaeditorialboardsamskritabharathi_198_N/mode/2up">abhyāsa pustakam (archive.org)</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PLCi0Uvx-2g0Nz0t1izFoWbCqwFcRmDrmu">complete youtube playlist</a></li>
 </ul>
 </section>

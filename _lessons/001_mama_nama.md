@@ -1,6 +1,6 @@
 ---
 number: 1
-title: mama nāma
+title: मम नाम / भवतः / भवत्याः
 layout: lesson
 youtube_id: "AIyzIR1efH4"
 youtube_start: "2:30"
