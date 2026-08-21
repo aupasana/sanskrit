@@ -6,6 +6,6 @@ youtube_id: "AIyzIR1efH4"
 youtube_start: "8:34"
 youtube_end: "21:10"
 resources: 
- - assets/exercises/002-exercises.pdf
- - abhyāsa pustakam section 1.2 अ, 1.2 आ, 1.2 इ
+ - assets/exercises/003-exercises.pdf
+ - abhyāsa pustakam section 1.3, 1.4, 1.5, 1.6
 ---
