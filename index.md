@@ -12,10 +12,9 @@ layout: default
 	  <p class="mb-3">{% include youtube_link.html youtube_id=lesson.youtube_id title=lesson.title start=lesson.youtube_start end=lesson.youtube_end %}</p>
 	{% endif %}
 
-	{% if lesson.exercises %}
-	<p>Exercises:</p>
+	{% if lesson.resources %}
 	<ul>
-	{% for ex in lesson.exercises %}
+	{% for ex in lesson.resources %}
 	  {% assign clean = ex | remove: '"' %}
 	  {% assign display = clean | split: '/' | last %}
 	  {% assign suffix = clean | slice: -4, 4 | downcase %}
@@ -41,6 +40,6 @@ layout: default
 <section class="mb-5">
 <h2>Resources</h2>
 <ul>
-    <li><a href="https://archive.org/details/abhaysapustakaeditorialboardsamskritabharathi_198_N/mode/2up">abhyāsa putakam</a></li>
+    <li><a href="https://archive.org/details/abhaysapustakaeditorialboardsamskritabharathi_198_N/mode/2up">abhyāsa pustakam (archive.org)</a></li>
 </ul>
 </section>
